@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang = "en-us">
+    <title>What is XHTML</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            
+                .attr1  {
+                    background-color: rgb(17, 235, 28);
+                    color: white;
+                    padding: 10px;
+        
+                }
+        
+                .attr2  {
+                    background-color: gray;
+                    color: rgb(163, 1, 1);
+                    padding: 10px;
+        
+                }
+        
+                table, th, td {
+                    border:4px solid rgb(129, 107, 45);
+                    border-collapse: collapse;
+                    padding : 30px;
+                  }
+                div {
+                    padding : 10px; 
+                    margin :20px;
+                    font-size : 25px;
+                }
+
+        </style>
+        <link rel="stylesheet" href="csstest/style1.css">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+
+<body>
+
+    <input type="button" value="night" onclick="
+    var target = document.querySelector('body');
+    if (this.value ==='night')  { 
+      target.style.backgroundColor = '#4A4F5A';
+      target.style.color = 'white';
+      this.value = 'day';
+  
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while (i < alist.length) {
+        console.log(alist[i]);
+        alist[i].style.color = 'pink';
+        i = i + 1;
+      }
+    
+    } else {
+      target.style.backgroundColor = '#f5f5dc';
+      target.style.color = 'black';
+      this.value = 'night';
+  
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while (i < alist.length) {
+        console.log(alist[i]);
+        alist[i].style.color = 'blue';
+        i = i + 1;
+        }
+      }  
+    ">
+<h1 class ="attr1">
+    <center>
+        w3school output
+    </center>
+</h1>
+
+
+    
+<h1 class ="attr2"><a href = "life_index.html">WEB</a></h1> 
+    <table style = "width:100%">
+        <tr>
+            <th style ="width:33%">
+                <li><a href = "1.html">HTML</a></li>
+                <li><a href = "2.html">CSS </a></li>
+                <li><a href = "3.html">JavaScript</a></li>
+                <li><a href = "4.html">Python Summary</a></li>
+                <li><a href = "htmltable.html">HTML TABLE 정리</a></li>
+                <li><a href = "htmllist.html">HTML LIST 정리</a></li>
+                <li><a href = "htmlblockinline.html">HTML BLOCK & INLINE 정리</a></li>
+                <li><a href = "htmlclasses.html">HTML CLASS ATTRIBUTE 정리</a></li>
+                <li><a href = "htmlid.html">HTML id Attribute</a></li>
+               <li> <a href = "htmlbookmark.html">How to use HTML Bookmark</a></li>
+            </th>
+            <th style ="width:33%">
+                <li><a href = "htmliframes.html">How to use HTML iframes</a></li>
+                <li><a href = "htmljavascript.html">How to use HTML JavaScript</a></li>
+                <li><a href = "htmlfilepaths.html">How to use File Paths</a></li>
+                <li><a href = "htmltheheadelement.html">How to use Head</a></li>
+                <li><a href = "htmlresponsive.html">What is Responsive Web Design</a></li>
+                <li><a href = "htmlExbootstrap.html">Bootstrap Example</a></li>
+                <li><a href = "htmlsemantic.html">What are Semantic Elements?</a></li>
+                <li><a href = "htmlentities.html">HTML Entities</a></li>                
+                <li><a href = "htmlsymbolsencode.html">HTML Symbols</a></li>
+                <li><a href = "htmlxhtml.html">HTML Versus XHTML</a></li>
+
+                
+            </th>
+            <th style ="width:33%">
+                <li><a href = "htmlforms.html">HTML Forms</a></li>
+                <li><a href = "htmlcanvas.html">HTML Canvas</a></li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+
+
+                
+            </th>
+        </tr>
+    </table> 
+    <h1>HTML Versus XHTML</h1>
+    <br><hr size = "2px" color = "blue"><br>
+    <p>XHTML is a stricter, moer XML - based version o HTML.</p>
+    <br><hr size = "2px" color = "blue"><br>
+    <h2>What is XHTML?</h2>
+    <div>
+        <li>XHTML stands for EXtensible HyperText Markup Language</li>
+        <li>XHTML is a stricter, more XML-based version of HTML</li>
+        <li>XHTML is supported by all major browsers</li>
+        <li>XHTML is HTML defined as an XML application</li>
+    </div>
+    <br><hr size = "2px" color = "blue"><br>
+    <textarea readnolyu = "readonly">읽기만 가능합니다. </textarea>
+    <br><hr size = "2px" color = "blue"><br>
+    <h2>Why XHTML??</h2>
+    <p>XML is a markup language where all documents must be marked up correctly (be "well-formed").</p>
+    <p>XHTML was developed to make HTML more extensibel and flexible to work with other data foramts</p>
+    <p>Browser ignore errors in HTML pages, and try to display the website even if it has some erreors in the markup. 
+    So XHTML comes with a much stricter error handling.</p>
+    <p>If you want to study, please read our <a href = "https://www.w3schools.com/xml/default.asp">Learn XML</a></p>
+    <br><hr size = "2px" color = "blue"><br>
+    <h3>The Most Important Differences from HTML</h3>
+        <div>
+            <li>&lt;!DOCTYPE&gt; is mandatory</li>
+            <li>The xmlns attribute in &lt;html&gt; is mandatory</li>
+            <li>&lt;html&gt;, &lt;head&gt;, &lt;title&gt;, and &lt;body&gt; are mandatory</li>
+            <li>Element must always be properly nested & closed & in lowercase</li>
+            <li>Attribnute names must always be in lowercase</li>
+            <li>Attribute values must always be quoted</li>
+            <li>Attribute minimization is forbidden</li>
+        </div>
+    <br><hr size = "2px" color = "blue"><br>
+    <br><hr size = "2px" color = "blue"><br>
+    <h2>XHTML - &lt;!DOCTYPE...&gt; is Mandatory</h2>
+    <note date="2008-01-10">
+        <to>Tove</to>
+        <from>Jani</from>
+      </note>
+
+    
+
+   
+    </body>
+    
+    </html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html`>
+<html lang = "en-us">
+    <title>Style Guide and Coding Conventions</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            
+                .attr1  {
+                    background-color: rgb(17, 235, 28);
+                    color: white;
+                    padding: 10px;
+        
+                }
+        
+                .attr2  {
+                    background-color: gray;
+                    color: rgb(163, 1, 1);
+                    padding: 10px;
+        
+                }
+        
+                table, th, td {
+                    border:4px solid rgb(129, 107, 45);
+                    border-collapse: collapse;
+                    padding : 30px;
+                  }
+                div {
+                    padding : 10px; 
+                    margin :20px;
+                    font-size : 25px;
+                }
+
+        </style>
+        <link rel="stylesheet" href="csstest/style1.css">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+
+<body>
+
+    <input type="button" value="night" onclick="
+    var target = document.querySelector('body');
+    if (this.value ==='night')  { 
+      target.style.backgroundColor = '#4A4F5A';
+      target.style.color = 'white';
+      this.value = 'day';
+  
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while (i < alist.length) {
+        console.log(alist[i]);
+        alist[i].style.color = 'pink';
+        i = i + 1;
+      }
+    
+    } else {
+      target.style.backgroundColor = '#f5f5dc';
+      target.style.color = 'black';
+      this.value = 'night';
+  
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while (i < alist.length) {
+        console.log(alist[i]);
+        alist[i].style.color = 'blue';
+        i = i + 1;
+        }
+      }  
+    ">
+<h1 class ="attr1">
+    <center>
+        w3school output
+    </center>
+</h1>
+
+
+    
+<h1 class ="attr2"><a href = "life_index.html">WEB</a></h1> 
+    <table style = "width:100%">
+        <tr>
+            <th style ="width:33%">
+                <li><a href = "1.html">HTML</a></li>
+                <li><a href = "2.html">CSS </a></li>
+                <li><a href = "3.html">JavaScript</a></li>
+                <li><a href = "4.html">Python Summary</a></li>
+                <li><a href = "htmltable.html">HTML TABLE 정리</a></li>
+                <li><a href = "htmllist.html">HTML LIST 정리</a></li>
+                <li><a href = "htmlblockinline.html">HTML BLOCK & INLINE 정리</a></li>
+                <li><a href = "htmlclasses.html">HTML CLASS ATTRIBUTE 정리</a></li>
+                <li><a href = "htmlid.html">HTML id Attribute</a></li>
+               <li> <a href = "htmlbookmark.html">How to use HTML Bookmark</a></li>
+            </th>
+            <th style ="width:33%">
+                <li><a href = "htmliframes.html">How to use HTML iframes</a></li>
+                <li><a href = "htmljavascript.html">How to use HTML JavaScript</a></li>
+                <li><a href = "htmlfilepaths.html">How to use File Paths</a></li>
+                <li><a href = "htmltheheadelement.html">How to use Head</a></li>
+                <li><a href = "htmlresponsive.html">What is Responsive Web Design</a></li>
+                <li><a href = "htmlExbootstrap.html">Bootstrap Example</a></li>
+                <li><a href = "htmlsemantic.html">What are Semantic Elements?</a></li>
+                <li><a href = "htmlentities.html">HTML Entities</a></li>                
+                <li><a href = "htmlsymbolsencode.html">HTML Symbols</a></li>
+                <li><a href = "htmlxhtml.html">HTML Versus XHTML</a></li>
+
+                
+            </th>
+            <th style ="width:33%">
+                <li><a href = "htmlforms.html">HTML Forms</a></li>
+                <li><a href = "htmlcanvas.html">HTML Canvas</a></li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+
+
+                
+            </th>
+        </tr>
+    </table>
+    <h2>Always Declare Document Type</h2>
+    <p>Always declare the document type as the first line in your document</p>
+    <p>The correct document type for HTML is : !DOCTYPE html</p>
+    <br><hr size = "3px" color = "hotpink"><br>
+    
+    <h2>Use Lowercase Element Names</h2>
+    <p>HTML allows mixing uppercase and lowercase letters in element names.</p>
+    <div>
+    <li>Mixing uppercase and lowercase names looks bad</li>
+    <li>Developers normally use lowercase names</li>
+    <li>Lowercase looks cleaner</li>
+    <li>Lowercase is easier to write</li>
+    </div>
+    <br><hr size = "3px" color = "hotpink"><br>
+
+    <h2>Close All HTML Elements</h2>
+    <section>
+        <p>This is a paragraph1.</p>
+        <p>This is a paragraph2.</p>
+      </section>
+    <br><hr size = "3px" color = "hotpink"><br>
+    
+    <h2>Use Lowercase Attribute Names</h2>
+    <p>HTML allows mixing uppercase and lowercase letters in attribute names.</p>
+    <p>However, we recommend wusing lowercase attribute names, because:</p>
+      <div>
+        <li>Mixing uppercase and lowercase names looks bad</li>
+        <li>Developers normally use lowercase names</li>
+        <li>Lowercase looks cleaner</li>
+        <li>Lowercase is easier to write</li>
+        <li>Same as element</li>
+      </div>
+    <a href = "https://www.w3schools.com/html/default.asp">Visit W3school HTML</a>
+    <br><hr size = "3px" color = "hotpink"><br>
+    <h2>Always Quote Attribute Values</h2>
+    <p>HTMl allows attribute values without quotes.</p>
+    <div>
+        <li>Developers normally use lowercase names</li>
+        <li>Quoted values are easier to read</li>
+        <li>You MUST use quotes if the value contains spaces</li>
+    </div>
+    <br><hr size = "3px" color = "hotpink"><br>
+    <h2>Always Specify alt, width, and height for Images</h2>
+    <p>Always specify the alt attribute for images. 
+        This attribute is important if the image for some reason cannot be displayed.</p>
+    <p>Also, always define the width and height of images. This reduces flickering, 
+        because the browser can reserve space for the image before loading.</p>
+
+    <img src = "picture1.jpg" alt = "HTML5" style = "width:100%">
+    <br><hr size = "3px" color = "hotpink"><br>
+    <h2>Avoid Long Code Lines</h2>
+    <p>When using an HTML editor, It is NOT convinient to scroll right and left to read the HTML code.</p>
+    <p>Try to avoid too long code lines.</p>
+    <br><hr size = "3px" color = "hotpink"><br>
+
+    <h2>Blank Lines and Indentation</h2>
+    <p>For readability, add blank lines to separate large or logical code blocks.</p>
+    <p>For readability, add two spaces of indentation. Do not use the tab key.</p>
+
+    <h1>Famous Cities</h1>
+    <h2>Good</h2>
+    <h3>Tokyo</h3>
+    <p>Tokyo is the capital of Japan, the center of the Greater Tokyo Area,
+        and the most populous metropolitan area in the world.
+        It is the seat of the Japanese government and the Imperial Palace,
+        and the home of the Japanese Imperial Family.</p>
+     
+    <h2>Good Table</h2>
+    <table>
+       <tr>
+           <th>Name</th>
+           <th>Description</th>
+       </tr>
+       <tr>
+           <td>A</td>
+           <td>Description of A</td>
+       </tr>
+       <tr>
+           <td>B</td>
+           <td>Description of B</td>
+       </tr>
+   </table>
+   <br><br>
+   <h2>Good List Example:</h2>
+   <ul>
+       <li>aaa</li>
+       <li>bbb</li>
+       <li>ccc</li>
+   </ul>
+   <br><hr size = "3px" color = "hotpink"><br>
+
+   <h2>Never Skip the &lt;title&gt; Element</h2>
+   <p>the &lt;title&gt; element is required in HTML</p>
+   <p>The contents of a page title is very important for search engine optimization (SEO)! </p>
+   <p>The page title is used by search engine algorithms to decide the order when listing pages in search results.</p>
+   <p>the &lt;title&gt; element</p>
+   <div>
+       <li>defines a title in the browser toolbar</li>
+       <li>provides a title for the page when it is added to favorites</li>
+   </div>
+   <p>Try to make the title as accurate and meaningful as possible :)</p>
+   <br><hr size = "3px" color = "hotpink"><br>
+   <h2>Setting The Viewport</h2>
+   <p>The viewport is thge user's visible area of a web page.
+       It varies with the device (it will be smaller on a mobile phone than on a computer screen.)
+   </p>
+   <p>You should include the following &lt;meta&gt; element in all your web pages:</p>
+   <p><font color = "hotpink">width=device-width</font> -> sets the width of the page to follow the screen-width of the device </p>
+   <p><font color = "hotpink">initial-scale=1.0</font> ->sets the initial zoom level when the page is first loaded by the browser.</p>
+
+   <p id = "Demo">This is paragraph 1.</p>
+   <p id = "demo">This is paragraph 2.</p>
+
+   <script>
+       // Only paragraph 2 will be overwritten
+   document.getElementById("demo").innerHTML = "Hello";
+   </script>
+   
+    </body>
+    
+    </html>
